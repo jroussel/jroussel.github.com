@@ -1,0 +1,30 @@
+body {
+  padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+ul.nav-social {
+  float: right !important;
+}
+ul.nav-social li a {
+  padding-left: 2px !important;
+}
+table th a, table th a:hover {
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+}
+td.column-left {
+  /*width: 100px !important;*/
+  text-align: center;
+}
+dl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+dl dt span.help-block {
+  display: inline;
+  float: right;
+}
+address {
+  text-align: center;
+}
