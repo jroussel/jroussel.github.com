@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -37,13 +36,13 @@
           <a class="brand" href="/"><img src="http://www.gravatar.com/avatar/e6be7df28d128e3a4397a81b1ba362b0?s=20" />&nbsp;Jean ROUSSEL · Développeur Web expert Symfony</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="CV_Roussel-Jean.pdf" title="Télécharger mon Curriculum Vitæ au format PDF" target="_blank"><i class="icon-download-alt icon-white" onclick="_gaq.push(['_ga trackEvent', 'CV', 'download']);"></i>&nbsp;Curriculum Vitæ</a></li>
+              <li><a href="CV_Roussel-Jean.pdf" title="Télécharger mon Curriculum Vitæ au format PDF" target="_blank"><i class="icon-download-alt icon-white" onclick="_gaq.push(['_trackEvent', 'CV', 'download']);"></i>&nbsp;Curriculum Vitæ</a></li>
             </ul>
             <ul class="nav nav-social">
-              <li><a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" title="Email"><img src="assets/img/icon-email.png" /></a></li>
-              <li><a href="https://plus.google.com/104675137587681986960" title="Google+" target="_blank"><img src="assets/img/icon-googleplus.png" /></a></li>
-              <li><a href="http://fr.linkedin.com/in/rousseljean" title="LinkedIn" target="_blank"><img src="assets/img/icon-linkedin.png" /></a></li>
-              <li><a href="https://twitter.com/#!/roussel_jean" title="Twitter" target="_blank"><img src="assets/img/icon-twitter.png" /></a></li>
+              <li><a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" title="Email" onclick="_gaq.push(['_trackEvent', 'Social', 'Email']);"><img src="assets/img/icon-email.png" /></a></li>
+              <li><a href="https://plus.google.com/104675137587681986960" title="Google+" onclick="_gaq.push(['_trackEvent', 'Social', 'Google+']);" target="_blank"><img src="assets/img/icon-googleplus.png" /></a></li>
+              <li><a href="http://fr.linkedin.com/in/rousseljean" title="LinkedIn" onclick="_gaq.push(['_trackEvent', 'Social', 'LinkedIn']);" target="_blank"><img src="assets/img/icon-linkedin.png" /></a></li>
+              <li><a href="https://twitter.com/#!/roussel_jean" title="Twitter" onclick="_gaq.push(['_trackEvent', 'Social', 'Twitter']);" target="_blank"><img src="assets/img/icon-twitter.png" /></a></li>
             </ul>
           </div>
         </div>
@@ -54,7 +53,7 @@
       <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
-            <th colspan="2" class="navbar-inner"><a href="#formation">Formation</a></th>
+            <th colspan="2" class="navbar-inner"><a href="#formation" onclick="_gaq.push(['_trackEvent', 'Section', 'Formation']);">Formation</a></th>
           </tr>
         </thead>
         <tbody>
@@ -90,18 +89,10 @@
       <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
-            <th colspan="2" class="navbar-inner"><a href="#experiences-professionnelles">Expériences professionnelles</a></th>
+            <th colspan="2" class="navbar-inner"><a href="#experiences-professionnelles" onclick="_gaq.push(['_trackEvent', 'Section', 'Expériences professionnelles']);">Expériences professionnelles</a></th>
           </tr>
         </thead>
         <tbody>
-          <!--tr>
-            <td>2011 - 2012</td>
-            <td class="column-left span2">
-              <dl>
-                <dt>Développeur d’applications Web <span class="help-block">AMG Développement - Groupe GPdis (Toulouse)</span></dt>
-              <dl>
-            </td>
-          </tr-->
           <tr>
             <td class="column-left span2">2005 - 2001</td>
             <td>
@@ -138,7 +129,7 @@
       <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
-            <th colspan="2" class="navbar-inner"><a href="#competences">Compétences</a></th>
+            <th colspan="2" class="navbar-inner"><a href="#competences" onclick="_gaq.push(['_trackEvent', 'Section', 'Compétences']);">Compétences</a></th>
           </tr>
         </thead>
         <tbody>
@@ -169,7 +160,7 @@
       <table class="table table-striped table-bordered table-condensed">
         <thead>
           <tr>
-            <th colspan="2" class="navbar-inner"><a href="#divers">Divers</a></th>
+            <th colspan="2" class="navbar-inner"><a href="#divers" onclick="_gaq.push(['_trackEvent', 'Section', 'Divers']);">Divers</a></th>
           </tr>
         </thead>
         <tbody>
@@ -184,7 +175,7 @@
         </tbody>
       </table>
       <address>
-        Jean ROUSSEL · 2B rue Sadi Carnot - Appt. B204 · 82000 Montauban · <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;</a>
+        Jean ROUSSEL · 2B rue Sadi Carnot - Appt. B204 · 82000 Montauban · <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" onclick="_gaq.push(['_trackEvent', 'Social', 'Email']);">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;</a>
       </address>
     </div>
   </body>
