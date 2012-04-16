@@ -30,3 +30,6 @@ dl dt span.help-block {
 address {
   text-align: center;
 }
+address div {
+  display: inline;
+}
