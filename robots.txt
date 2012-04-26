@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /
+Disallow: /CV_Roussel-Jean.pdf$

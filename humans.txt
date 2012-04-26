@@ -1,0 +1,12 @@
+/* TEAM */
+	Author: Jean Roussel
+	Contact: contact [at] jean-roussel.fr
+	Twitter: @roussel_jean
+	From: Montauban, Tarn-et-Garonne, France
+
+/* SITE */
+	Last update: 2012/02/26
+	Language: French
+	Doctype: HTML5
+	Components: Twitter Bootstrap
+	Software: Sublime Text 2
