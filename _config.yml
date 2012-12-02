@@ -1,2 +1,2 @@
 auto: true
-exclude: [_less, CNAME, Gemfile, Gemfile.lock, README.md, Rakefile]
+exclude: [_less, CNAME, README.md]
