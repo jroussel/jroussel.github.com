@@ -3,6 +3,3 @@ _site
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
-
-# MacOSX
-.DS_Store
