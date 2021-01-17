@@ -1,0 +1,98 @@
+body {
+	font-size: 0.8rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 0.2rem;
+}
+
+a {
+	color: #198754;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #198754;
+	text-decoration: underline;
+}
+
+span.link {
+	color: #198754;
+}
+
+.text-muted {
+	font-weight: normal;
+}
+.text-muted > small {
+	color: initial;
+}
+
+div.card {
+	margin-top: 1rem;
+}
+div.card > div.card-header {
+	border-bottom: 0;
+}
+div.card > div.card-body > address {
+	margin-bottom: 0;
+}
+div.card > div.card-body > a.btn {
+	margin-top: 1rem;
+}
+
+table > thead > tr > th {
+	padding-left: 10px !important;
+	padding-top: 8px !important;
+    padding-bottom: 0px !important;
+}
+
+table > thead > tr > th > a,
+table > thead > tr > th > a:hover,
+table > thead > tr > th > a:focus,
+table > thead > tr > th > a:active {
+	color: #fff;
+	text-decoration: none;
+	cursor: initial;
+	text-transform: uppercase;
+}
+
+table > thead > tr > th > a > i {
+	float: left;
+	margin-right: 0.4rem;
+	margin-top: -2px;
+}
+
+table > thead > tr > th > a > h2 {
+	font-size: 1rem;
+}
+
+table > tbody > tr > td.text-center {
+	width: 10rem;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 1.5rem;
+}
+
+dl {
+	margin-bottom: 0;
+}
+dl > dd {
+	margin-left: 1rem;
+	margin-bottom: 0;
+}
+dl > dd > ul {
+	padding-left: 0.5rem;
+}
+
+table > tbody > tr > td.text-center > span.badge,
+dl > dd > span.badge {
+	background: none !important;
+	border: 1px solid #6c757d!important;
+	color: #6c757d!important;
+	font-weight: 400;
+	margin-bottom: 0.3rem;
+}

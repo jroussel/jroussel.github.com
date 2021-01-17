@@ -1,16 +1,20 @@
+{% assign now = "now" | date: "%s" %}
+{% assign birth = "1984-02-22" | date: "%s" %}
+{% assign diff = now | minus: birth %}
+{% assign days = 31557600 %}
+{% assign age = diff | divided_by: days %}
 <section>
-        <a name="divers"></a>
-        <table class="table table-striped table-bordered table-condensed">
-          <thead>
-            <tr>
-              <th colspan="2" class="navbar-inner"><a href="#divers" onclick="_gaq.push(['_trackEvent', 'Section', 'Divers']);"><h2><i class="icon-chevron-right icon-white"></i>&nbsp;Divers</h2></a>
-            </tr>
-          <tbody>
-            <tr>
-              <td colspan="2">
-                <ul>
-                  <li>Situation : 34 ans, célibataire, sans enfant, permis B, véhicule personnel
-                  <li>Loisirs : bandes dessinées, jeux vidéos, ski, rugby
-                </ul>
-        </table>
-      </section>
+  <a name="divers"></a>
+  <table class="table table-bordered table-striped table-sm">
+    <thead class="table-dark">
+      <tr>
+        <th colspan="2"><a href="#divers" onclick="_gaq.push(['_trackEvent', 'Section', 'Divers']);"><i class="bi-pin-angle"></i><h2>Divers</h2></a>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          <ul>
+            <li>Situation : {{ age | floor }} ans, célibataire, sans enfant, permis B, véhicule personnel
+            <li>Activités : bénévole à l'<a href="https://usmsapiac.fr/" target="_blank">USM Rugby</a> (journal papier et site de l'Association, site de l'<a href="http://www.anciensusm.fr/" target="_blank">Amicale des Anciens</a>)
+            <li>Loisirs : bricolage/rénovation, course à pied, VTT, bandes dessinées
+  </table>
+</section>
