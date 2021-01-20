@@ -35,11 +35,29 @@ div.card {
 div.card > div.card-header {
 	border-bottom: 0;
 }
-div.card > div.card-body > address {
+div.card > div.card-body {
+	text-align: center;
+}
+div.card > div.card-body > span.badge {
+	margin-right: 0.8rem;
+}
+div.card > div.card-footer {
+	padding-left: 0;
+}
+div.card > div.card-footer > address {
 	margin-bottom: 0;
 }
-div.card > div.card-body > a.btn {
-	margin-top: 1rem;
+div.card > div.card-footer > address > span,
+div.card > div.card-footer > address > a,
+div.card > div.card-footer > address > i {
+	display: block;
+	float: left;
+}
+div.card > div.card-footer > address > i,
+div.card > div.card-footer > address > span > i {
+	margin-top: -1px;
+	margin-left: 0.8rem;
+	margin-right: 0.2rem;
 }
 
 table > thead > tr > th {
@@ -54,7 +72,6 @@ table > thead > tr > th > a:focus,
 table > thead > tr > th > a:active {
 	color: #fff;
 	text-decoration: none;
-	cursor: initial;
 	text-transform: uppercase;
 }
 
@@ -88,11 +105,10 @@ dl > dd > ul {
 	padding-left: 0.5rem;
 }
 
-table > tbody > tr > td.text-center > span.badge,
-dl > dd > span.badge {
-	background: none !important;
-	border: 1px solid #6c757d!important;
-	color: #6c757d!important;
+table > tbody > tr > td.text-center > span.text-muted {
+	display: block;
+	font-size: 0.7rem;
 	font-weight: 400;
-	margin-bottom: 0.3rem;
+	font-style: italic;
+	margin-bottom: 0.2rem;
 }
