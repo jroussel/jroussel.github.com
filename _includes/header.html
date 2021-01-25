@@ -1,21 +1,42 @@
-<div class="card text-dark bg-light mb-3" itemscope itemtype="http://data-vocabulary.org/Person">
-  <div class="card-header">
-    <h1 class="float-start"><span itemprop="name">Jean ROUSSEL</span> · <span itemprop="title">Senior Web Developer · Symfony</span></h1>
-    <a href="/CV_Roussel-Jean.pdf" target="_blank" class="btn btn-success btn-large d-print-none float-end" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'CV', 'download']);">Télécharger mon CV</a>
-  </div>
-  <div class="card-body">
-    <span class="badge bg-secondary">Consciencieux</span>
-    <span class="badge bg-secondary">Pédagogue</span>
-    <span class="badge bg-secondary">Force de proposition</span>
-    <span class="badge bg-secondary">Fiable</span>
-    <span class="badge bg-secondary">Adaptabilité</span>
-  </div>
-  <div class="card-footer text-muted">
-    <address>
-      <i class="bi-house" title="Adresse"></i> <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="street-address">17 impasse Louis Cabanes</span> · <span itemprop="postal-code">82000</span> <span itemprop="locality">Montauban</span>, <span itemprop="country-name">France</span></span>
-      <i class="bi-envelope" title="E-mail"></i> <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" onclick="_gaq.push(['_trackEvent', 'Social', 'Email']);"><span itemprop="email">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;</span></a>
-      <i class="bi-phone" title="Téléphone"></i> <span itemprop="telephone">06.09.72.82.00</span>
-      <span class="d-none d-print-inline"><i class="bi-globe" title="Site"></i> <a href="https://jean-roussel.fr/"><span itemprop="url">https://jean-roussel.fr/</span></a></span>
-    </address>
-  </div>
-</div>
+      <div class="card text-dark bg-light mb-3">
+        <div class="card-header">
+          <figure class="float-start">
+            <blockquote class="blockquote">
+              <h1>Jean Roussel</h1>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              <h2>Senior Full-Stack Web Developer (Symfony)</h2>
+            </figcaption>
+          </figure>
+          <img src="https://via.placeholder.com/70" class="img-thumbnail float-end" alt="Jean Roussel">
+        </div>
+        <div class="card-body">
+        {% if include.404 %}
+          <p class="lead">Désolé, la page que vous demandez est introuvable…</p>
+          <p>
+            Il est possible que la page recherchée ait été supprimée, que son nom ait changé ou qu'elle ne soit pas disponible pour le moment.
+            <br />Cliquez sur le lien suivant pour revenir à la <a href="/">page d'accueil</a>.
+          </p>
+        {% else %}
+          <p class="lead">
+            Fort d'une pratique de plus de 15 ans dans le développement d'applications Web en PHP, je maîtrise le framework Symfony depuis les premières versions et me suis récemment diversifié dans les applications mobiles en Flutter. Rentré en tant que stagiaire pour mon premier emploi, je suis monté en compétence au cours de mes 2 longues expériences professionnelles et occupe actuellement un poste de directeur technique dans une petite structure d'édition de logiciels. J'aime particulièrement m'investir dans toutes les étapes d'un projet, de l'analyse des besoins aux tests finaux en passant par la conception, le développement et le suivi du planning.
+          </p>
+          <span class="badge bg-secondary">Esprit d'entreprendre</span>
+          <span class="badge bg-secondary">Rigueur</span>
+          <span class="badge bg-secondary">Adaptabilité</span>
+          <span class="badge bg-secondary">Concentration</span>
+          <span class="badge bg-secondary">Persuasion</span>
+          <span class="badge bg-secondary">Sens des responsabilités</span>
+        {% endif %}
+        </div>
+        <div class="card-footer text-muted">
+          <address>
+            <i class="bi-envelope" title="E-mail"></i> <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" onclick="_gaq.push(['_trackEvent', 'Social', 'Email']);">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;</a>
+            <i class="bi-phone" title="Téléphone"></i> <span>06.09.72.82.00</span>
+            <span class="d-none d-print-inline"><i class="bi-globe" title="Site"></i> <a href="https://jean-roussel.fr">https://jean-roussel.fr</a></span>
+            <i class="bi-house" title="Adresse"></i> <span>Montauban, France</span>
+            <i class="bi-calendar-event" title="Âge"></i> <span>{% assign now = "now" | date: "%s" %}{% assign birth = "1984-02-22" | date: "%s" %}{% assign diff = now | minus: birth %}{% assign days = 31557600 %}{% assign age = diff | divided_by: days %}{{ age | floor }} ans</span>
+            <span class="d-print-none"><i class="bi-download" title="Curriculum Vitæ"></i> <a href="/CV_Roussel-Jean.pdf" target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'CV', 'download']);">Curriculum Vitæ (PDF)</a></span>
+          </address>
+        </div>
+      </div>
