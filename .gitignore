@@ -1,4 +1,11 @@
+# Jekyll
+.jekyll-cache/
 _site
+
+# macOS
+.DS_Store
+_includes/.DS_Store
+css/.DS_Store
 
 # Sublime Text
 *.sublime-project

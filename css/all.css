@@ -1,0 +1,140 @@
+body {
+	font-size: 0.8rem;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 0.2rem;
+}
+h2 {
+	display: inline-block;
+	font-size: 1.3rem;
+}
+h3 {
+	font-size: 1.1rem;
+}
+
+a {
+	color: #198754;
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #198754;
+	text-decoration: underline;
+}
+
+span.link {
+	color: #198754;
+}
+
+.text-muted {
+	font-weight: normal;
+}
+.text-muted > small {
+	color: initial;
+}
+
+div.card {
+	margin-top: 1rem;
+	margin-bottom: 1.5rem!important;
+}
+div.card > div.card-header {
+	border-bottom: 0;
+}
+div.card > div.card-header > figure {
+	margin-top: 6px;
+}
+div.card > div.card-header > figure,
+div.card > div.card-header > figure > figcaption {
+	margin-bottom: 0;
+}
+div.card > div.card-body {
+	text-align: center;
+}
+div.card > div.card-body > p.lead {
+	font-size: 0.9rem;
+	margin-bottom: 0.5rem;
+}
+div.card > div.card-body > span.badge {
+	margin-right: 0.5rem;
+	font-size: .9em;
+    font-weight: 300;
+    padding: .5em .7em;
+}
+div.card > div.card-footer {
+	padding-left: 0;
+}
+div.card > div.card-footer > address {
+	margin-bottom: 0;
+}
+div.card > div.card-footer > address > span,
+div.card > div.card-footer > address > a,
+div.card > div.card-footer > address > i {
+	display: block;
+	float: left;
+}
+div.card > div.card-footer > address > i,
+div.card > div.card-footer > address > span > i {
+	margin-top: -1px;
+	margin-left: 0.8rem;
+	margin-right: 0.2rem;
+}
+
+section {
+	margin-bottom: 1.5rem;
+}
+
+table > thead > tr > th {
+	padding-left: 10px !important;
+	padding-top: 8px !important;
+    padding-bottom: 0px !important;
+}
+
+table > thead > tr > th > a,
+table > thead > tr > th > a:hover,
+table > thead > tr > th > a:focus,
+table > thead > tr > th > a:active {
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+table > thead > tr > th > a > i {
+	float: left;
+	margin-right: 0.4rem;
+	margin-top: -2px;
+}
+
+table > thead > tr > th > a > h3 {
+	font-size: 1rem;
+}
+
+table > tbody > tr > td.text-center {
+	width: 10rem;
+}
+
+ul {
+	margin-bottom: 0;
+	padding-left: 1.5rem;
+}
+
+dl {
+	margin-bottom: 0;
+}
+dl > dd {
+	margin-left: 1rem;
+	margin-bottom: 0;
+}
+dl > dd > ul {
+	padding-left: 0.5rem;
+}
+
+table > tbody > tr > td.text-center > span.text-muted {
+	display: block;
+	font-size: 0.7rem;
+	font-weight: 400;
+	font-style: italic;
+	margin-top: 0.3rem;
+}

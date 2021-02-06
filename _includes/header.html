@@ -1,14 +1,40 @@
-      <header class="hero-unit no-print">
-        <ul class="nav nav-social no-print">
-          <li class="doyoubuzz"><a href="http://www.doyoubuzz.com/jean-roussel/" title="DoYouBuzz" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);" target="_blank">DoYouBuzz</a></li>
-          <li class="email"><a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" title="Email" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);">Email</a></li>
-          <li class="googleplus"><a href="https://plus.google.com/+JeanRoussel" title="Google+" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);" target="_blank" rel="author">Google+</a></li>
-          <li class="linkedin"><a href="http://fr.linkedin.com/in/rousseljean" title="LinkedIn" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);" target="_blank">LinkedIn</a></li>
-          <li class="remixjobs"><a href="https://remixjobs.com/cv/Jean-Roussel/33641" title="RemixJobs" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);" target="_blank">RemixJobs</a></li>
-          <li class="twitter"><a href="https://twitter.com/#!/roussel_jean" title="Twitter" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);" target="_blank">Twitter</a></li>
-          <li class="viadeo"><a href="http://www.viadeo.com/fr/profile/jean.roussel10525" title="Viadeo" onclick="_gaq.push(['_trackEvent', 'Social', this.title]);" target="_blank">Viadeo</a></li>
-        </ul>
-        <h1>Jean ROUSSEL · Développeur Web Symfony &amp; Magento</h1>
-        <p>Diplômé en 2005 de l'IUT Informatique de Toulouse, j'ai démarré ma carrière professionnelle au sein de la société <strong>WaterProof SARL</strong> (éditeur de l'IDE <strong>PHPEdit</strong>) où j'ai pu mettre en pratique mes connaissances et me perfectionner dans le développement d'applications web en <strong>PHP</strong>. J'ai ainsi pu apprendre le framework <strong>symfony</strong> avec lequel j'ai développé une dizaine d'applications web. Je suis ensuite passé par la société <strong>AMG Développement</strong> (Groupe GPdis) au sein de laquelle j'ai travaillé avec le <strong>Zend framework</strong> sur une plateforme <strong>Magento</strong> hébergeant 7 sites de e-commerce. Actuellement en poste chez <strong>Marcom Connect</strong>, je développe des applications en <strong>Symfony</strong> pour des solutions en ligne de planification d'événements.</p>
-        <p><a href="/CV_Roussel-Jean.pdf" target="_blank" class="btn btn-success btn-large" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'CV', 'download']);"><i class="icon-download-alt icon-white icon-large"></i>&nbsp;Télécharger mon Curriculum Vitæ au format PDF</a></p>
-      </header>
+      <div class="card text-dark bg-light mb-3">
+        <div class="card-header">
+          <figure class="float-start">
+            <blockquote class="blockquote">
+              <h1>Jean Roussel</h1>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              <h2>Senior Full-Stack Web Developer (Symfony)</h2>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card-body">
+        {% if include.404 %}
+          <p class="lead">Désolé, la page que vous demandez est introuvable…</p>
+          <p>
+            Il est possible que la page recherchée ait été supprimée, que son nom ait changé ou qu'elle ne soit pas disponible pour le moment.
+            <br />Cliquez sur le lien suivant pour revenir à la <a href="/">page d'accueil</a>.
+          </p>
+        {% else %}
+          <p class="lead">
+            Fort d'une pratique de plus de 15 ans dans le développement d'applications Web en PHP, j'occupe actuellement le poste de directeur technique pour une société d'édition de logiciels. Je maîtrise notamment le framework Symfony depuis ses premières versions et je me suis récemment diversifié dans les applications mobiles en Flutter. Mes différentes expériences professionnelles m'ont permis de développer de nombreux projets pour tout type de secteurs : éducation internationale, e-commerce, édition de livres, aéronautique… Quel que soit le projet qui m'est confié, je peux intervenir dans toutes ses étapes : de l'analyse des besoins aux tests finaux en passant par la conception, le développement et le suivi du planning.
+          </p>
+          <span class="badge bg-secondary">Esprit d'entreprise</span>
+          <span class="badge bg-secondary">Rigueur</span>
+          <span class="badge bg-secondary">Adaptabilité</span>
+          <span class="badge bg-secondary">Concentration</span>
+          <span class="badge bg-secondary">Sens des responsabilités</span>
+        {% endif %}
+        </div>
+        <div class="card-footer text-muted">
+          <address>
+            <i class="bi-envelope" title="E-mail"></i> <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;" onclick="_gaq.push(['_trackEvent', 'Social', 'Email']);">&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#106;&#101;&#097;&#110;&#045;&#114;&#111;&#117;&#115;&#115;&#101;&#108;&#046;&#102;&#114;</a>
+            <i class="bi-phone" title="Téléphone"></i> <span>06.09.72.82.00</span>
+            <span class="d-none d-print-inline"><i class="bi-globe" title="Site"></i> <a href="https://jean-roussel.fr">https://jean-roussel.fr</a></span>
+            <i class="bi-house" title="Adresse"></i> <span>Montauban, France</span>
+            <i class="bi-calendar-event" title="Âge"></i> <span>{% assign now = "now" | date: "%s" %}{% assign birth = "1984-02-22" | date: "%s" %}{% assign diff = now | minus: birth %}{% assign days = 31557600 %}{% assign age = diff | divided_by: days %}{{ age | floor }} ans</span>
+            <span class="d-print-none"><i class="bi-download" title="Curriculum Vitæ"></i> <a href="/CV_Roussel-Jean.pdf" target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'CV', 'download']);">Curriculum Vitæ (PDF)</a></span>
+          </address>
+        </div>
+      </div>

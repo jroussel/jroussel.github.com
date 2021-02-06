@@ -1,3 +1,3 @@
 # jroussel.github.com
 
-Page personnelle : http://jean-roussel.fr
+Page personnelle : https://jean-roussel.fr

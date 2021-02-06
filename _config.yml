@@ -1,2 +1,2 @@
 auto: true
-exclude: [_less, CNAME, README.md]
+exclude: [CNAME, jroussel.github.com.sublime-project, README.md]
