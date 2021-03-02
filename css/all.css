@@ -77,7 +77,7 @@ div.card > div.card-footer > address > i {
 }
 div.card > div.card-footer > address > i,
 div.card > div.card-footer > address > span > i {
-	margin-top: -1px;
+	margin-top: 1px;
 	margin-left: 1.5rem;
 	margin-right: 0.2rem;
 }
