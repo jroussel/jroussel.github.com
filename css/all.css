@@ -68,17 +68,12 @@ div.card > div.card-footer {
 }
 div.card > div.card-footer > address {
 	margin-bottom: 0;
-}
-div.card > div.card-footer > address > span,
-div.card > div.card-footer > address > a,
-div.card > div.card-footer > address > i {
-	display: block;
-	float: left;
+	text-align: center;
 }
 div.card > div.card-footer > address > i,
 div.card > div.card-footer > address > span > i {
 	margin-top: 1px;
-	margin-left: 1.5rem;
+	margin-left: 1.2rem;
 	margin-right: 0.2rem;
 }
 
@@ -104,7 +99,6 @@ table > thead > tr > th > a:active {
 table > thead > tr > th > a > i {
 	float: left;
 	margin-right: 0.4rem;
-	margin-top: -2px;
 }
 
 table > thead > tr > th > a > h3 {
